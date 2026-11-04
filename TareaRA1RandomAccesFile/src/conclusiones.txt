@@ -1,0 +1,5 @@
+Diferencia entre registros de tamaño fijo y variable
+
+Los registros de tamaño fijo ocupan siempre el mismo número de bytes. Esto permite calcular directamente la posición de un registro y acceder a él utilizando seek().
+Los registros de tamaño variable pueden ocupar diferentes cantidades de bytes dependiendo de los datos que contienen. Por eso no podemos calcular directamente la posición del siguiente registro sin conocer antes cuánto ocupa el anterior.
+En esta práctica hemos utilizado registros de tamaño fijo para poder acceder directamente a diferentes posiciones del fichero y registros variables con writeUTF() y readUTF().
